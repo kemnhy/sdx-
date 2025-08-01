@@ -1,1 +1,87 @@
 @charset "utf-8";
+/* 상단 */
+.header {
+  width: 100%;
+  /* background-color: #ffffff; */
+  height: 80px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1800px;
+  height: 80px;
+  margin: auto;
+  /* background-color: beige; */
+}
+/* 로고 */
+.logo {
+  width: 220px;
+}
+.logo img {
+  width: 100%;
+}
+/* 메뉴 */
+.nav {
+  /* background-color: palegreen; */
+}
+.gnb {
+  width: calc(178px * 6);
+  display: flex;
+  /* background-color: rgb(198, 240, 219); */
+}
+
+.gnb > li {
+  width: calc(100% / 6);
+}
+.gnb > li > a {
+  font-size: 19px;
+  font-weight: bold;
+}
+/* 언어 */
+.lang {
+  width: 177px;
+  display: flex;
+  /* background-color: rgb(162, 240, 214); */
+}
+.lang > a {
+  width: 68px;
+}
+.lang > a > img {
+  gap: 10px;
+  width: 100%;
+}
+.lang-list {
+  width: calc(100% - 68px);
+  display: flex;
+  padding-top: 5px;
+  /* background-color: rgb(149, 235, 235); */
+}
+.lang-list > li {
+  text-align: center;
+  width: calc(100% / 2);
+}
+.lang-list > li > a {
+  font-size: 10px;
+  font-weight: bold;
+  color: #888;
+}
+.lang-list li:nth-child(2) a {
+  color: #333;
+}
+.lang-list > li::after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 11px;
+  display: block;
+  background-color: #999;
+}
+.lang-list > li:first-child:after{
+    content: none;
+}
